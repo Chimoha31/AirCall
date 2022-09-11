@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.callInfo_container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  & .info_body {
+    height: 90%;
+    background: #fff;
+    position: relative;
+    & .scroll {
+      width: 100%;
+      height: 85%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+  & .each_callInfo {
+    width: 100%;
+    & .date {
+      border: 1px solid #ccc;
+      background-color: rgb(246, 244, 244);
+      color: rgb(75, 74, 74);
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin: 10px;
+      margin-bottom: 5px;
+    }
+    & .info {
+      border: 1px solid rgb(235, 234, 234);
+      border-radius: 13px;
+      padding: 20px 10px;
+      width: 95%;
+      box-shadow: rgba(194, 194, 194, 0.2) 0px 2px 8px 0px;
+      margin-bottom: 10px;
+    }
+    & .detailInfo_icon {
+      cursor: pointer;
+      font-size: 1rem;
+      color: rgb(7, 46, 155);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+.detailInfo_container {
+  font-family: 'Baloo 2', cursive;
+  height: 50vh;
+  display: flex;
+  flex: column;
+  justify-content: center;
+  align-items: center;
+  & .card {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+  & .user_img {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  & .call {
+    & h5 {
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+    & p {
+      font-size: 0.7rem;
+      color: #727272;
+    }
+  }
+  & .date_time {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 3px 8px;
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+.detailInfo {
+  cursor: pointer;
+}

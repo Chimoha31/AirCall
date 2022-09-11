@@ -1,0 +1,30 @@
+.menubar_container {
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  & .bar_icon {
+    padding: 3px;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  & .phone,
+  & .contacts,
+  & .keyboard,
+  & .settings,
+  & .record{
+    color: #727272;
+    transition: all 0.5s;
+  }
+  & .phone:hover,
+  & .contacts:hover,
+  & .keyboard:hover,
+  & .settings:hover,
+  & .record:hover{
+    transform: scale(1.5);
+    color: #43C020;
+  }
+}
