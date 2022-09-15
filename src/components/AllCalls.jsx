@@ -10,7 +10,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import MenuBar from "./MenuBar";
 import Loader from "./Loader";
 
-const AllCalls = ({ handleSelectedInbox }) => {
+const AllCalls = ({ handleSelectedInbox, inbox }) => {
   const [loading, setLoading] = useState(true);
   const [callInfo, setCallInfo] = useState([]);
   const navigate = useNavigate();
@@ -20,6 +20,10 @@ const AllCalls = ({ handleSelectedInbox }) => {
     await axios
       .get(`https://aircall-job.herokuapp.com/activities`)
       .then((res) => {
+  // Updated Line 24 - 26 (Used condition to navigate home when refresh)
+        if(inbox) {
+          navigate("/")
+        }
         setCallInfo(res.data);
         console.log(callInfo);
       })

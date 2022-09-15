@@ -15,6 +15,7 @@ const App = () => {
     setInbox(true);
     navigate("/");
   };
+
   return (
     <div className="container">
       <Header />
@@ -26,7 +27,11 @@ const App = () => {
         />
         <Routes>
           <Route exact path="/" element={<Inbox />} />
-          <Route exact path="all_calls" element={<AllCalls handleSelectedInbox={handleSelectedInbox} />} />
+          <Route
+            exact
+            path="all_calls"
+            element={<AllCalls handleSelectedInbox={handleSelectedInbox} inbox={inbox} />}
+          />
           <Route exact path="/detail_info/:id" element={<DetailInfo />} />
         </Routes>
       </div>

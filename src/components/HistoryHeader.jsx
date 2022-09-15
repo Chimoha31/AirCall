@@ -4,11 +4,12 @@ import "../styles/HistoryHeader.scss";
 
 const HistoryHeader = ({inbox, setInbox, handleSelectedInbox}) => {
   const navigate = useNavigate();
+
   const handleSelectedAllCalls = () => {
     setInbox(false);
     navigate("/all_calls");
   };
-
+ 
   return (
     <div className="d-flex justify-content-evenly align-items-center history_header">
       {inbox ? (
