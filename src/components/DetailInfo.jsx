@@ -10,17 +10,19 @@ const DetailInfo = () => {
   const params = useParams();
   const navigate = useNavigate();
   const [detailInfo, setDetailInfo] = useState({});
-
   const callType = Object.values(detailInfo);
+
   const callTypeUpperCase =
     typeof callType[8] === "string"
       ? callType[8][0].toUpperCase() + callType[8].slice(1)
       : "";
+      
   const date =
     typeof callType[1] === "string"
       ? callType[1].split("").splice(0, 10).join("")
       : "";
   console.log(date);
+
   const time =
     typeof callType[1] === "string"
       ? callType[1].split("").splice(11, 5).join("")
