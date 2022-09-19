@@ -1,9 +1,11 @@
+@import "./variables";
+
 header {
   height: 20px;
   margin: 0 auto;
   padding: 10px 0px 40px 0px;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $primaryGray;
   & svg {
     display: inline-block;
     width: 100px;

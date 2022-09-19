@@ -1,10 +1,12 @@
+@import "./variables";
+
 .menubar_container {
   width: 100%;
   position: absolute;
   bottom:0;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $primaryGray;
   padding-top: 10px;
   & .bar_icon {
     padding: 3px;
@@ -16,7 +18,7 @@
   & .keyboard,
   & .settings,
   & .record{
-    color: #727272;
+    color: $secondaryGray;
     transition: all 0.5s;
   }
   & .phone:hover,
